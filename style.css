@@ -1,0 +1,247 @@
+
+<style type="style/css">
+p {
+    color:white;
+    background-color:red;
+ }
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:small;
+    background-color:#CCC; /*màu nền xám cho trang web*/
+    /*background:url(images/background.gif); hoặc dùng hình nền*/
+    }
+    #top{
+        width:1000px;
+        margin:auto;
+        height:28px;
+        background-color:#F4F4F4;
+        }
+        #top_left{
+            float:left; 
+            margin:4px 0 0 20px;
+            
+        #top_right{
+            float:right;
+            margin: 5px 20px 0 0px; 
+            }
+            a{
+            text-decoration:none; 
+            }
+            #top_right ul{
+            list-style-type:none; 
+            }
+            #top_right ul li{
+            float:left; 
+            margin-right:5px; 
+            color:#999; 
+            }
+            #top_right ul li a{
+            color:#999; 
+            }
+            #top_right ul li a:hover{
+            color:#00F; 
+        #header{
+            width:1000px;
+            margin:auto;
+            height:150px;
+            border:1px solid #000;
+            }    
+            #shopcart{
+                float:right;
+                width:180px;
+                height:67px;
+                border:1px solid #000;
+                position:relative; /*div shopcart cố định*/
+                }
+                #shopcart img{
+                width:180px;
+                margin-top:13px;
+                }
+                #info_cart{
+                position:absolute; z-index:99; /*div info-cart nằm lên*/
+                top:0px; /*div info-cart nằm lên cách top shopcart là 0*/
+                margin: 25px 0 0 100px; /*cách lề info-cart với shopcart*/
+                text-align:center;
+                color:#F00; /*canh giữa chữa trong div info-cart*/
+                }
+                #header_phone{
+                    width:150px; 
+                    height:30px;
+                    border:1px solid #000;
+                    float:left; /* 2 div header_phone, header_search trên 1 hàng*/
+                    margin-top:28px;
+                    background:url(images/call.png) no-repeat; /* tạo hình nền & k cho hình lặp lại*/
+                    padding-left:30px; /* số điện thoại cách lề trái 30px*/
+                    font-size:14px;
+                    color:#00F;
+                    line-height:30px; /* Canh giữa chiều cao*/
+                    }
+                #header_search{
+                    width:216px;
+                    height:30px;
+                    border:1px solid #000;
+                    float:left; /* 2 div header_phone, header_search trên 1 hàng*/
+                    margin-top:28px;
+                    background:#f7f7f7;
+                    position:relative; /*cố định để hiệu chỉnh btnsearch*/
+                    }
+                    #txtsearch{
+                    width:180px;
+                    height:29px;
+                    border:0; /*bỏ viền khung txtsearch*/
+                    background:#f7f7f7;
+                    }
+                    #btnsearch{
+                    width:34px;
+                    height:30px;
+                    /* nằm trên div header_search cách top và right 0px*/
+                    position:absolute; z-index:99; top:0; right:0;
+                    border:0; /*mất viền button*/
+                    background:url(images/toolbar_find.png) no-repeat;
+                    cursor:pointer; /*rê chuột vào xuất hiện bàn tay*/
+                    }
+    #menu{
+    width:1000px;
+    margin:15px auto; /*canh giữa và div menu cách div phía trên 15px*/
+    height:42px;
+    border:1px solid #000000;
+    background:#000;
+
+    }
+    #menu ul li{
+        float:left; /*các li nằm trên 1 hàng*/
+        border-right:1px dotted #FFF; /* Tạo đường gạch ngăn cách các li*/
+        height:42px;
+        }
+        #menu ul{
+        list-style-type:none;
+        }
+        #menu ul li a{
+        /*khoảng cách từ nội dung(chữ) đến lề trái & phải của mỗi li 25px*/
+        padding:0 25px 0 25px;
+        color:#FFF;
+        background:#000;
+        font-weight:bold;
+        line-height:42px; /*nội dung canh giữa chiều cao*/
+        display:inline-block;
+        }
+        #menu img{
+        float:left;
+        padding:5px 10px 0 10px;
+        }
+        #menu ul li a:hover{
+        background:#999;
+        color:#00C;
+        }
+        #main{
+        width:1000px; 
+        margin:10px auto;
+        height:800px;
+        }
+        #main_left{
+        width:230px;
+        height:750px;
+        float:left;
+        }
+        #main_right{
+        width:749px;
+        height:750px;
+        float:left;
+        border-left: 1px dotted #333;
+        margin-left:20px;
+       }
+        #menu_left{
+        width:200px;
+        height:300px;
+        border:1px solid #000;
+        margin:10px 0 0 14px; /*div cách trên 10, trái 14*/
+        border:1px solid #cccccc;
+        border-radius:6px; /*bo tròn góc 1 độ 6px*/
+        }
+        #menu_left li{
+        line-height:25px;
+        }
+        #menu_left >ul >li{
+        border-bottom:1px solid #999;
+        }
+        .submenu li{
+        padding-left:30px;
+        background:url(images/arrow.png) no-repeat 15px 10px ; /*tạo hình nền và không lặp lại*/
+        }
+        #menu_left a{
+        color:#00F; /*màu xanh*/
+        }
+        #menu_left a:hover{
+        color:#f1004c; /*màu đỏ*/
+        cursor:pointer; /*hình bàn tay*/
+        }
+        ul{
+            list-style-type:none; /*bỏ dấu chấm tròn đầu danh sách*/
+            }
+            #products{
+            margin-left:17px; /*div products cách div main-right 17px*/
+            }
+            #products ul li{
+            width:230px;
+            height:340px;
+            border:1px solid #000;
+            }
+            .content{ 
+            width:210px;
+            height:320px;
+            margin:9px 10px 9px 10px;
+            }
+    #products ul li{
+    width:230px;
+    height:340px;
+    float:left; /*nằm ngang*/
+    margin-right:7px; /*cách bên phải 7px*/
+    }
+    title{
+        margin-top: 6px;
+        text-align:center;
+        color:#F09;
+        }
+        .price{
+        margin-top:3px;
+        text-align:center;
+        font-size:12px;
+        color:#999999;
+        }
+        #products ul li:hover{
+        background:#ccc;
+        box-shadow:0 0 5px #2c2c30; /*đổ bóng*/
+        }
+        #main_right{
+        width:749px;
+        /*height:750px;*/
+        float:left;
+        /*border:1px solid #000;*/
+        border-left: 1px dotted #333;
+        margin-left:20px;
+        }
+        
+            
+        
+
+            
+
+
+
+            
+            
+            
+            
+                        
+                    
+                    
+                
+
+    
+
+
+
+
+
+    </style>
